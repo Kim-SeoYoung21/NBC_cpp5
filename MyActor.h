@@ -22,8 +22,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	virtual void Move();
-	virtual int Step();
+	void Move();
+	int Step();
 private:
 	FVector2D start;
 };
