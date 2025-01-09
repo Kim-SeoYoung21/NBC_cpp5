@@ -29,14 +29,14 @@ void AMyActor::Move()
 {
     for (int i = 0; i < 10; i++)
     {
-        int nStep = Step();
-        start.X += nStep;
+        int nStepX = Step(); 
+        start.X += nStepX;
 
-        nStep = Step();
-        start.Y += nStep;
+        int nStepY = Step();
+        start.Y += nStepY;
 
-        // ��ǥ �α� ���
-        UE_LOG(LogTemp, Warning, TEXT("%dȸ �̵�: (%.0f, %.0f)"), i + 1, start.X, start.X);
+        // ÁÂÇ¥ ·Î±× Ãâ·Â
+        UE_LOG(LogTemp, Warning, TEXT("%dÈ¸ ÀÌµ¿: (%.0f, %.0f)"), i + 1, start.X, start.Y);
     }
 }
 
